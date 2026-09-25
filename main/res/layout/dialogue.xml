@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30px"
+        android:fontFamily="sans-serif-black"
+        android:text="Titolo Prova"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtMain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="30px"
+        android:layout_marginLeft="30px"
+        android:autoLink="web"
+        android:text="aaaaaaa"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edTxtAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtText"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:ems="10"
+        android:hint="codice segreto"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edTxtAnswer"
+        android:layout_centerHorizontal="true"
+        android:text="Verifica e Chiudi" />
+</RelativeLayout>
